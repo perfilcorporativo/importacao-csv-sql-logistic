@@ -1,4 +1,4 @@
-LOAD DATA LOCAL INFILE 'C:\\Users\\i\\Desktop\\importacao-csv-sql-logistic\\data\\entregas.csv'
+LOAD DATA LOCAL INFILE '/caminho/para/entregas.csv'
 INTO TABLE entregas
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
