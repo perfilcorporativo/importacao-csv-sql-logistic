@@ -1,83 +1,53 @@
 # Importação de CSV para MySQL/PostgreSQL — Projeto Logístico
 
-Este projeto demonstra como importar dados de entregas logísticas a partir de um arquivo **CSV** para bancos de dados **MySQL** e **PostgreSQL**, além de gerar relatórios úteis para análise.
+Projeto de estudo para praticar **SQL, importação de dados e criação de consultas simples** a partir de uma base logística simulada.
 
----
+## Estrutura
 
-## 📁 Estrutura do Projeto
-
-importacao-csv-sql-logistica/
+```
+importacao-csv-sql-logistic/
 ├── data/
-│ └── entregas.csv
+│   └── entregas.csv
 ├── sql/
-│ ├── create_table.sql
-│ ├── import_data_mysql.sql
-│ ├── import_data_postgresql.sql
-│ └── relatorio.sql
+│   ├── create_table.sql
+│   ├── import_data_mysql.sql
+│   ├── import_data_postgresql.sql
+│   └── relatorio.sql
 └── README.md
+```
 
----
+## Base de dados
 
-## 📂 1. Base de Dados — entregas.csv
+O arquivo CSV contém 50 registros simulados de entregas, com campos como:
 
-Arquivo contendo **50 entregas reais simuladas** com:
+- origem e destino
+- status da entrega
+- distância
+- prazo previsto
+- data de entrega
+- valor do frete
 
-- Código da entrega  
-- Cidade de origem e destino  
-- Status  
-- Distância em km  
-- Prazo previsto  
-- Data de entrega  
-- Valor do frete  
+## Consultas praticadas
 
----
+Os scripts incluem:
 
-## 🛠 2. Scripts SQL
+- criação de tabela
+- importação de CSV
+- contagem de entregas
+- agrupamento por status
+- cálculo de SLA
+- média de distância
+- média de valor de frete
 
-### 🔹 Criar tabela
-Local: `sql/create_table.sql`
+## Tecnologias utilizadas
 
-### 🔹 Importar CSV — MySQL  
-Local: `sql/import_data_mysql.sql`  
-Usa `LOAD DATA LOCAL INFILE`.
+- SQL
+- MySQL
+- PostgreSQL
+- CSV
 
-### 🔹 Importar CSV — PostgreSQL  
-Local: `sql/import_data_postgresql.sql`  
-Usa `COPY`.
+## O que pratiquei
 
----
+O projeto foi criado para reforçar fundamentos de banco de dados, organização de dados e consultas SQL voltadas a um cenário operacional simples.
 
-## 📊 3. Relatórios SQL
-
-Local: `sql/relatorio.sql`  
-Inclui consultas de:
-
-- Total de entregas  
-- Entregas por status  
-- SLA (entregas dentro do prazo)  
-- Média de distância  
-- Valor médio do frete  
-
----
-
-## 🎯 Objetivo
-
-- Demonstrar integração de CSV → SQL  
-- Mostrar domínio em MySQL/PostgreSQL  
-- Criar portfólio para vagas de suporte/logística  
-- Mostrar capacidade de geração de relatórios operacionais  
-
----
-
-## 📌 Tecnologias
-
-- MySQL  
-- PostgreSQL 
-- CSV  
-- SQL  
-
----
-
-## ✨ Autor
-
-Projeto desenvolvido para fins de portfólio profissional.
+> Projeto pessoal de estudo e portfólio. Não representa experiência profissional.
